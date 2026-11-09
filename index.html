@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#07070d" />
+
+  <!-- Primary SEO -->
+  <title>Legendar — Premium Software Marketplace</title>
+  <meta name="description" content="Legendar is a premium software marketplace. Genuine Adobe and Software Engineering licenses, delivered digitally. Secure orders, manual payment verification, Moroccan bank transfer support." />
+  <meta name="keywords" content="software marketplace, Adobe, development tools, IDE, software licenses, Morocco" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="./" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Legendar" />
+  <meta property="og:title" content="Legendar — Premium Software Marketplace" />
+  <meta property="og:description" content="Genuine Adobe & Software Engineering licenses. Premium dark-store experience, digital delivery, MAD pricing." />
+  <!-- eslint-disable-next-line -->
+  <meta property="og:image" content="assets/og-cover.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/brand-logo.jfif" />
+
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    // TEMP boot diagnostics (removed before production)
+    (function(){
+      try {
+        localStorage.setItem('errs', '[]');
+        var push = function(s){ try{ var a=JSON.parse(localStorage.getItem('errs')||'[]'); a.push(s); localStorage.setItem('errs', JSON.stringify(a.slice(0,60))); }catch(_){} };
+        window.addEventListener('error', function(e){ push(e.message ? 'JS: '+e.message+' @ '+String(e.filename||'').split('/').pop()+':'+e.lineno : 'RES: '+String(e.target && (e.target.src||e.target.href)||'').split('/').slice(-2).join('/')); }, true);
+        window.addEventListener('unhandledrejection', function(e){ push('PROMISE: '+String(e.reason && (e.reason.message||e.reason)).slice(0,250)); });
+        window.addEventListener('DOMContentLoaded', function(){ push('DOM_READY'); });
+      } catch(_){}
+    })();
+  </script>
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <div id="demo-banner" hidden></div>
+  <header id="app-header" class="app-header"></header>
+  <main id="app" class="app-main" aria-live="polite">
+    <div class="page-loader"><div class="logo-mark logo-mark--brand logo-mark--lg"><img src="assets/brand-logo.jfif" alt="Legendar" /></div><div class="spinner"></div></div>
+  </main>
+  <footer id="app-footer" class="app-footer"></footer>
+  <div id="toast-root" role="status" aria-live="polite"></div>
+  <div id="modal-root"></div>
+</body>
+</html>

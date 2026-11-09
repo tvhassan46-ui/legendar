@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="512" height="512">
+  <defs>
+    <filter id="g" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3"/></filter>
+  </defs>
+  <rect x="6" y="6" width="108" height="108" rx="26" fill="none" stroke="#ff9a1f" stroke-width="6" filter="url(#g)" opacity=".7"/>
+  <rect x="6" y="6" width="108" height="108" rx="26" fill="#221405" stroke="#ff9a1f" stroke-width="5"/>
+  <text x="60" y="76" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="50" font-weight="700" fill="#ff9a1f">Dz</text>
+</svg>
